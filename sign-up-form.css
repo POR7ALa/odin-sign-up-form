@@ -1,0 +1,68 @@
+html {
+    overflow: hidden;
+}
+
+.wholeContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftHandContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    height: 100vh;
+    width: 33%;
+}
+
+.leftHandContainer > p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.leftHandForeground {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    background-color: red;
+    height: 25vh;
+    width: 100%;
+    margin-bottom: 45%;
+}
+
+.leftHandContent {
+    background-color: blue;
+    height: 75%;
+    width: 65%;
+}
+
+.rightHandContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+}
+
+.upperRight {
+    height: 37%;
+    width: 100%;
+    background-color: grey;
+}
+
+.middleRight {
+    height: 29%;
+    width: 100%;
+    background-color: yellow;
+}
+
+.lowerRight {
+    height: 33%;
+    width: 100%;
+    background-color: orange;
+}
