@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sign-up-form.css">
-    <script src="sign-up-form.js"></script>
+    <script src="sign-up-form.js" defer></script>
     <title>Sign Up</title>
 </head>
 <body>
@@ -20,9 +20,51 @@
         <p>Photo by <a href="https://unsplash.com/@brewbottle?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Bob Brewer</a> on <a href="https://unsplash.com/photos/a-large-white-bird-with-a-long-orange-beak-Qic7ckPeyIY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
         </div>
         <div class="rightHandContainer">
-            <div class="upperRight"></div>
-            <div class="middleRight"></div>
-            <div class="lowerRight"></div>
+            <div class="upperRight">
+                <div class="upperRightContent">
+                    <p id="upperRightUpperText">Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican, Pelican,
+                    Pelican, Pelican, Pelican.</p>
+                </div>
+                <div>
+                    <p id="upperRightLowerText">Pelican,<i> Pelican</i>, Pelican!</p>
+                </div>
+            </div>
+
+            <div class="middleRight">
+                <div class="formGreeting">Pelican</div>
+                <div class="mainForm">
+                    <div id="leftForm">
+                        <form name="peliForm" id="peliForm">
+                            <label for="first_name">First Name:</label>
+                            <input type="text" id="first_name" required> 
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" required>
+                            </div>
+
+                            <div id="rightForm">
+                                <label for="last_name">Last Name:</label>
+                                <input type="text" id="last_name">
+
+                                <label for="phone">Phone Number:</label>
+                                <input type="number" id="phone" >
+
+                                <label for="confirm_password">Confirm Password:</label>
+                                <input type="password" id="confirm_password" required>
+                                <div class="nonMatching" id="error"><img src="./Error-1024.webp" alt="error icon"> Passwords are not matching</div>
+                            </div>
+    
+                </div>
+                                
+                            </div>
+                            <div class="lowerRight">
+                                <button type="submit" id="createAccount">Create Account</button>
+                        </form>
+                <p class="belowButton">Already have an account? <a href="">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>

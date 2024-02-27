@@ -222,3 +222,21 @@ fieldset {
 .lowerRight > p > a:visited {
     color: #d16827;
 }
+
+.nonMatching {
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.25vw;
+    margin-top: -3vh;
+    /* margin-left: 1vw; */
+    font-size: 1.5vh;
+    background-color: rgb(255, 144, 144, .5);
+    height: 2.5vh;
+    
+}
+
+#error > img {
+    height: 2.5vh;
+    width: 1.5vw;
+}
